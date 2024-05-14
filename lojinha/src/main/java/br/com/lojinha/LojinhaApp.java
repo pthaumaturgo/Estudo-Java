@@ -8,12 +8,15 @@ import java.util.List;
 
 public class LojinhaApp {
     public static void main(String[] args) { // psvm
-        Produto meuProduto = new Produto();
+        System.out.println("----------------------------");
+        Produto meuProduto = new Produto("APPLE", Tamanho.PROMAX);
+
 
         meuProduto.setNome ("Iphone 15");
         meuProduto.setValor (11.900);
-        meuProduto.setMarca("Apple");
-        meuProduto.setTamanho (Tamanho.PROMAX);
+      //  meuProduto.setTamanho (Tamanho.PROMAX);
+      //  meuProduto.setMarca("PAULA");
+
 
         List<String> ItensInclusos = new ArrayList<>();
         ItensInclusos.add ("Caixa"); //0
@@ -22,12 +25,12 @@ public class LojinhaApp {
         ItensInclusos.add ("Case"); //3
         meuProduto.setItensInclusos(ItensInclusos);
 
-        System.out.println("----------------------------");
         System.out.println(meuProduto.getNome());
         System.out.println(meuProduto.getMarca());
         System.out.println(meuProduto.getTamanho());
         System.out.println(meuProduto.getItensInclusos().getLast());
         System.out.println(meuProduto.getValor());
+
 
         System.out.println("----------------------------");
 

@@ -11,6 +11,13 @@ public class Produto {
     private Tamanho tamanho;
     private List<String> itensInclusos;
 
+
+    public Produto(String marca1, Tamanho tamanho1) {
+        this.marca = marca1;
+        this.tamanho = tamanho1;
+    }
+
+
     public double getValor() {
         return this.valor;
     }

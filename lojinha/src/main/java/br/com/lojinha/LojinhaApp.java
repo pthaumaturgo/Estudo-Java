@@ -1,5 +1,6 @@
 package br.com.lojinha;
 
+import br.com.lojinha.enums.Tamanho;
 import br.com.lojinha.pojo.Produto;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class LojinhaApp {
         meuProduto.setNome ("Iphone 15");
         meuProduto.setValor (11.900);
         meuProduto.setMarca("Apple");
-        meuProduto.setTamanho ("ProMax");
+        meuProduto.setTamanho (Tamanho.PROMAX);
 
         List<String> ItensInclusos = new ArrayList<>();
         ItensInclusos.add ("Caixa"); //0

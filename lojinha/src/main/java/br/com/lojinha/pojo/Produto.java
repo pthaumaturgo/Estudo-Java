@@ -1,11 +1,13 @@
 package br.com.lojinha.pojo;
 
+import java.util.List;
+
 public class Produto {
     private String nome;
     private String marca;
     private double valor;
     private String tamanho;
-    private String itensInclusos;
+    private List<String> itensInclusos;
 
     public double getValor() {
         return this.valor;
@@ -44,11 +46,11 @@ public class Produto {
         this.tamanho = novoTamanho;
     }
 
-    public String getItensInclusos() {
+    public List<String> getItensInclusos() {
         return this.itensInclusos;
     }
 
-    public void setItensInclusos(String novosItensInclusos) {
+    public void setItensInclusos(List<String> novosItensInclusos) {
         this.itensInclusos = novosItensInclusos;
     }
 }

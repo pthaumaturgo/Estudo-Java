@@ -12,7 +12,7 @@ public class Produto {
     private List<ItemIncluso> itensInclusos;
 
 
-    public Produto(String marca1, Tamanho tamanho1) {
+    public Produto(String marca1, Tamanho tamanho1) { //construtor
         this.marca = marca1;
         this.tamanho = tamanho1;
     }

@@ -3,7 +3,10 @@ package br.com.lojinha;
 import br.com.lojinha.enums.Tamanho;
 import br.com.lojinha.pojo.ItemIncluso;
 import br.com.lojinha.pojo.Produto;
+import br.com.lojinha.pojo.ProdutoInternacional;
+import br.com.lojinha.pojo.ProdutoNacional;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +56,15 @@ public class LojinhaApp {
         }
 
         System.out.println("----------------------------");
+        ProdutoNacional meuProdutoNacional = new ProdutoNacional("Sony", Tamanho.PROMAX);
+        meuProdutoNacional.setImpostoNacional(0.94564);
+        System.out.println(meuProdutoNacional.getImpostoNacional());
 
+        System.out.println("----------------------------");
+
+        ProdutoInternacional meuProdutoInternacional = new ProdutoInternacional("Samsung", Tamanho.PLUS);
+        meuProdutoInternacional.setTaxaImportacao(5.6452);
+        System.out.println(meuProdutoInternacional.getTaxaImportacao());
     }
 }//fimalgoritmo
 

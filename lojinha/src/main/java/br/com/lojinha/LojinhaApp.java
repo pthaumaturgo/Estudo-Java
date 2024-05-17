@@ -63,8 +63,11 @@ public class LojinhaApp {
         System.out.println("----------------------------");
 
         ProdutoInternacional meuProdutoInternacional = new ProdutoInternacional("Samsung", Tamanho.PLUS);
-        meuProdutoInternacional.setTaxaImportacao(5.6452);
+        meuProdutoInternacional.setTaxaImportacao(5.4050);
         System.out.println(meuProdutoInternacional.getTaxaImportacao());
+
+        meuProdutoInternacional.setValor(-99);
+        System.out.println(meuProdutoInternacional.getValor());
     }
 }//fimalgoritmo
 
